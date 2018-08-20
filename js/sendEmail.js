@@ -3,7 +3,7 @@ $('#contactForm').submit(function(e){
         email=$('#inputEmail'),
         message=$('#message');
 
-    if(!name.val() || !email.val() || !message.val()){
+    if(name.val() || email.val() || message.val()){
         alert('Please check your entries.')
     }
     else{
