@@ -8,7 +8,7 @@ $('#contactForm').submit(function(e){
     }
     else{
         $.ajax({
-            url: "https://formspree.io/contactForm",
+            url: "https://formspree.io/vania.boncheva@gmail.com",
             method: "POST",
             data: $(this).serialize(),
             dataType: "json"
