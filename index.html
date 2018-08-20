@@ -29,7 +29,7 @@
   </head>
   <body>
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">VB </a>
+      <a class="navbar-brand" href="#home">VB </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -38,9 +38,6 @@
           <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
                   <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#experience">Experience</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="#skills">Skills</a>
@@ -56,10 +53,10 @@
   </nav>
 
   
-<div class="jumbotron bg-wizardry bg-dark text-white mb-5 radius-0" id="about">
+<div class="jumbotron bg-wizardry bg-dark text-white mb-5 radius-0" id="home">
   <div class="container" >
 
-      <h1 class="display-3 text-light">Vania Boncheva
+      <h1 class="display-3 text-light">Hello, My name is Vania!
         <span class="fa fa-magic text-warning display-icon"></span>
       </h1>
       <span class="lead">Web developer - Graphic artist - User experince designer</span>
@@ -76,47 +73,38 @@
   </div>
 </div>
 
-
-
-
-  <div class="container col-10" id="experience">
-      <h2 class="display-4 text-center">Experience</h2>
+  <div class="container col-10" id="about">
       <div class="row mb-5">
 
           <div class="card text-white bg-dark col-3">
-              <div class="card-header">HTML</div>
+              <div class="card-header font-weight-bold">Dynamic</div>
               <div class="card-body">
-                  <h4 class="card-title">Success card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Websites don't have to be static, I love making pages come to life.</p>
               </div>
           </div>
 
           <div class="card bg-light col-3">
-              <div class="card-header">CSS</div>
+              <div class="card-header font-weight-bold">Intuitive</div>
               <div class="card-body">
-                  <h4 class="card-title">Light card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Strong preference for easy to use.</p>
               </div>
           </div>
 
           <div class="card text-white bg-dark col-3">
-              <div class="card-header">Javascript / JQuery</div>
+              <div class="card-header font-weight-bold">Responsive</div>
               <div class="card-body">
-                  <h4 class="card-title">Success card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">My layouts will work on any device, big or small.</p>
               </div>
           </div>
 
           <div class="card bg-light col-3">
-              <div class="card-header">Botstrap</div>
+              <div class="card-header">Fast</div>
               <div class="card-body">
-                  <h4 class="card-title">Light card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Fast load times and lag free interaction, my highest priority.</p>
               </div>
           </div>
 
       </div>
-  </div>
   </div>
 
   <div class="container" id="skills">
@@ -143,14 +131,14 @@
 
 
   <div class="container " id="projects"  >
-      <h2 class="display-4 text-center">Projects</h2>
+      <h2 class="display-4 text-center">Projects <span class="h5">/will be completed soon/</span></h2>
 
           <div id="accordion ">
               <div class="card">
                   <div class="card-header bg-dark " id="headingOne">
                       <h5 class="mb-0">
                           <button class="btn btn-link text-light font-weight-bold font-italic " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Collapsible Group Item
+                              Project #1
                           </button>
                       </h5>
                   </div>
@@ -165,7 +153,7 @@
                   <div class="card-header bg-dark" id="headingTwo">
                       <h5 class="mb-0">
                           <button class="btn btn-link text-light font-weight-bold font-italic collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Collapsible Group Item
+                              Project #2
                           </button>
                       </h5>
                   </div>
@@ -179,7 +167,7 @@
                   <div class="card-header  bg-dark" id="headingThree">
                       <h5 class="mb-0">
                           <button class="btn btn-link text-light font-weight-bold font-italic collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Collapsible Group Item
+                              Project #3
                           </button>
                       </h5>
                   </div>
@@ -198,45 +186,39 @@
   <div class="container border-0 d-flex justify-content-center">
           <div class="jumbotron bg-dark text-light col-6 " id="contactMe">
 
-              <form>
+              <form action="https://formspree.io/vania.boncheva@gmail.com" method="POST" id="contactForm">
                   <div class="form-group">
-                      <label for="emailInput">Email</label>
-                      <input type="email" class="form-control" id="emailInput" placeholder="Your email"><br>
 
-                      <label for="message">You are inerested in</label>
-                      <select class="form-control" id="message">
-                          <option>Freelancer</option>
-                          <option>Meeting</option>
-                          <option>Job position</option>
-                          <option>Digital Marketing</option>
-                      </select><br>
+                      <label for="inputName">Your name</label>
+                      <input type="text" name="name" id="inputName" class="form-control" placeholder="Your name"><br>
 
-                      <label for="exampleFormControlTextarea1">Message</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+                      <label for="inputEmail">Email</label>
+                      <input type="email" name="_replyto" class="form-control" id="inputEmail" placeholder="Your email"><br>
 
-                      <div class="form-check pb-1">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                          <label class="form-check-label" for="defaultCheck1">
-                              I agree to terms
-                          </label>
-                      </div>
-                      <button type="button" class="btn btn-warning ">Submit</button>
+                      <label for="message">Message</label>
+                      <textarea class="form-control" name="mesage" id="message" rows="3"></textarea><br>
+
+                      <button type="submit" value="Send" class="btn btn-warning" >Submit</button>
 
                   </div>
 
               </form>
+
 
           </div>
 
 
   <footer class="footer bg-dark fixed-bottom text-center footer-custom">
       <div class="container">
-          <span class="text-white  ">Copyright Ⓒ 2018</span>
+          <span class="text-white  ">Copyright VB Ⓒ 2018</span>
       </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  <script src="js/smooth-scroll.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+      <script src="js/smooth-scroll.js"></script>
+      <script src="js/alertify.min.js"></script>
+      <script src="js/sendEmail.js"></script>
+
   </body>
 </html>
