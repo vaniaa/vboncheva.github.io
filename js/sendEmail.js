@@ -4,7 +4,7 @@ $('#contactForm').submit(function(e){
         message=$('#message');
 
     if(!name.val() || !email.val() || !message.val()){
-        alert('Please check your entries.')
+
     }
     else{
         $.ajax({
